@@ -14,8 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         for (let i = 0; i < boxes.length; i++) {
-            const tempIndex = Math.floor(Math.random() * Math.floor(nums.length))
+            const tempIndex = Math.floor(Math.random() * Math.floor(nums.length));
+            let cover = document.createElement("div");
+            cover.classList.add("cover");
             boxes[i].innerHTML = `${nums[tempIndex]}`
+            boxes[i].append(cover)
             nums.splice(tempIndex, 1);
         }
 
