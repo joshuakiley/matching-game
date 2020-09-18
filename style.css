@@ -42,7 +42,7 @@
 }
 
 .box {
-    border: 10px solid #f89821;
+    border: 10px solid #FFF;
     width: 20%;
     height: 20%;
     user-select: none;
@@ -58,6 +58,22 @@
     width: 100%;
     z-index: 2;
     position: absolute;
+}
+
+.behind {
+    z-index: -100;
+}
+
+.in-play {
+    z-index: -100;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
 }
 
 /* GAME BOARD END */
