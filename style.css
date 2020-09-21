@@ -15,6 +15,7 @@
 .head {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .head>button {
